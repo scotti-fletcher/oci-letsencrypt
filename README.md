@@ -7,4 +7,4 @@ Key & Certificate artefacts processed in memory (not persisted to disk), and sto
 
 Issue and automatically renew Let's Encrypt certificates. 
 
-For detailed install instructions see https://redthunder.blog/2022/10/08/lets-encrypt-automation-with-oracle-cloud-infrastructure
+For detailed install instructions see https://redthunder.blog/2022/10/14/managing-multiple-lets-encrypt-certificates-with-oracle-cloud-infrastructure/
