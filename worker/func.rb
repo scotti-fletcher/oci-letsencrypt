@@ -147,11 +147,11 @@ def exec_cert_bot(cert_config, existing_cert)
      challenges << challenge
   end
 
-  sleep(30) #wait 30 seconds while DNS propagates to prevent premature failure
+  sleep(120) #wait 2 minutes while DNS propagates to prevent premature failure
 
   challenges.each{|challenge| challenge.request_validation}
   while challenges.map{|challenge| challenge.status}.include?('pending')
-    sleep(2)
+    sleep(4)
     challenges.each{|challenge| challenge.reload}
   end
 
